@@ -10,7 +10,6 @@ import { HashRouter } from "react-router-dom";
 function Routing() {
   return (
     <HashRouter>
-      <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/auth" element={<Signup />} />
@@ -20,7 +19,6 @@ function Routing() {
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </Router>
     </HashRouter>
   );
 }
